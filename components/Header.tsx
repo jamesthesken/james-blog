@@ -1,17 +1,29 @@
+import Link from "next/link";
 import LightSwitch from "./LightSwitch";
 
 function Header({}) {
   return (
     <section>
         <nav className="flex justify-between items-center py-6 px-10 mt-5 relative">
+        <Link href={'/'}>
+            <a className="text-lg font-bold">
+                James
+            </a>
+        </Link>
         <div className="xl:hidden">
             <button className="navbar-burger focus:outline-none text-indigo-900 hover:text-indigo-800">
             <svg className="block h-6 w-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Mobile menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></button>
         </div>
         <ul className="hidden xl:flex absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <li><a className="text-lg mr-10 2xl:mr-16 font-extrabold hover:text-indigo-800" href="#">Blog</a></li>
-            <li><a className="text-lg mr-10 2xl:mr-16 font-extrabold hover:text-indigo-800" href="#">About</a></li>
-            <li><a className="text-lg mr-10 2xl:mr-16 font-extrabold hover:text-indigo-800" href="#">Contact</a></li>
+            <Link href={'/'}>
+                <li><a className="text-lg mr-10 2xl:mr-16 font-extrabold hover:text-indigo-800">Blog</a></li>
+            </Link>
+            <Link href={'/about'}>
+                <li><a className="text-lg mr-10 2xl:mr-16 font-extrabold hover:text-indigo-800">About</a></li>
+            </Link>
+            <Link href={'/contact'}>    
+                <li><a className="text-lg mr-10 2xl:mr-16 font-extrabold hover:text-indigo-800">Contact</a></li>
+            </Link>
             <li><LightSwitch /></li>
         </ul>
         </nav>

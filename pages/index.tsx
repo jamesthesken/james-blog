@@ -15,7 +15,7 @@ export const getStaticProps = () => {
 
 export default function Home({ posts }) {
   return (
-    <div>
+    <div className='px-10'>
       <h1 className="mt-24 mb-12 font-bold text-3xl">Latest Posts</h1>
       {posts['allPostsData'].map((post) => (
         <PostCard
