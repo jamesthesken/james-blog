@@ -5,7 +5,7 @@ import { getPosts, getPost } from "../../helpers/getPosts";
 
 export default function Post({ data, content }) {
     return (
-      <div className="px-10">
+      <div className="ml-10">
         <h1 className="font-bold text-5xl mt-24 mb-12">{data.title}</h1>
         <time className="text-gray-500 italic">{data.date}</time>
         <p className="prose dark:prose-invert mt-12">

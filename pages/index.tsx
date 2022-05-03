@@ -13,6 +13,8 @@ export const getStaticProps = () => {
   };
 };
 
+
+
 export default function Home({ posts }) {
   return (
     <div className='px-10'>
