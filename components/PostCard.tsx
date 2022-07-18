@@ -9,9 +9,9 @@ export default function PostCard(props) {
             <p className="mb-4 text-gray-500 text-sm">{props.date}</p>
             <p className="mb-4 text-sm italic">{props.description}</p>
             <Link href={`/posts/${props.slug}`}>
-                <a className="text-indigo-800 text-sm">Read more</a>
+                <a className="text-indigo-800 text-sm">{'>'} Read more</a>
             </Link>
-            <div className="mt-4 mb-4 border-t border-gray-300"></div>
+            <div className="mt-4 mb-4 border-t border-green-500"></div>
         </div>
     )
 }
