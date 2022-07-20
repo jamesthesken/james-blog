@@ -25,7 +25,7 @@ export default function Home({ posts }) {
         Welcome 🤙
         </h3>
           <p className='px-8 mt-10 mb-5'> 
-          My name is James, I'm a software engineer passionate about learning new technologies,
+          My name is James, I&apos;m a software engineer passionate about learning new technologies,
           surfing, and working on cars. 
           </p>
 
@@ -39,7 +39,7 @@ export default function Home({ posts }) {
           </p>
 
           <p className='px-8 mb-10'> 
-          Some of the things you'll find on this website:
+          Some of the things you&apos;ll find on this website:
           <ul className='list-disc px-8'>
             <li>Go / Python / React Projects and Tutorials <strong className='dark:text-terminal dark:[text-shadow:0_4px_8px_rgba(0,200,0,0.4)]'>(Coming Soon)</strong></li>
             <li>Automotive Projects</li>
