@@ -29,23 +29,23 @@ export default function Home({ posts }) {
           surfing, and working on cars. 
           </p>
 
-          <p className='px-8 mb-10'> 
+          <p className='px-8 mb-5'> 
           Technical Interests:
-          <ul className='list-disc px-8'>
-            <li> Systems Design / Integration </li>
-            <li> Peer-to-peer networks </li>
-            <li> Terminal User Interfaces </li>
-          </ul>
           </p>
+          <ul className='list-disc px-12 mb-5'>
+            <li> Docker </li>
+            <li> Amazon Web Services </li>
+            <li> Linux </li>
+          </ul>
 
-          <p className='px-8 mb-10'> 
+          <p className='px-8 mb-5'> 
           Some of the things you&apos;ll find on this website:
-          <ul className='list-disc px-8'>
+          </p>
+          <ul className='list-disc px-12 mb-10'>
             <li>Go / Python / React Projects and Tutorials <strong className='dark:text-terminal dark:[text-shadow:0_4px_8px_rgba(0,200,0,0.4)]'>(Coming Soon)</strong></li>
             <li>Automotive Projects</li>
             <li> ¯\_(ツ)_/¯</li>
           </ul>
-          </p>
         </div>
       
       </div>
