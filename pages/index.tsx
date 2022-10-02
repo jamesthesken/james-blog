@@ -28,16 +28,6 @@ export default function Home({ posts }) {
           My name is James, I&apos;m a software engineer passionate about learning new technologies,
           surfing, and working on cars. 
           </p>
-
-          <p className='px-8 mb-5'> 
-          Technical Interests:
-          </p>
-          <ul className='list-disc px-12 mb-5'>
-            <li> Docker </li>
-            <li> Amazon Web Services </li>
-            <li> Linux </li>
-          </ul>
-
           <p className='px-8 mb-5'> 
           Some of the things you&apos;ll find on this website:
           </p>
