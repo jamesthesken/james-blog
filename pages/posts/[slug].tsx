@@ -1,6 +1,7 @@
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import imageSize from "rehype-img-size";
+import rehypeHighlight from "rehype-highlight"
 import { getPosts, getPost } from "../../helpers/getPosts";
 
 
@@ -30,7 +31,7 @@ export const getStaticProps = async ({ params }) => {
     const post = await getPost(params.slug);
     const mdxSource = await serialize(post.content, {
       mdxOptions: {
-        rehypePlugins: [[imageSize, { dir: "public" }]],
+        rehypePlugins: [[imageSize, { dir: "public" }], rehypeHighlight],
       },
     });
     return {
